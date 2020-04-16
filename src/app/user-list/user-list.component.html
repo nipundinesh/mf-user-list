@@ -1,0 +1,16 @@
+
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let user of usersList">
+   
+
+<div class="card" style="width:400px" >
+    <div class="card-body">
+      <h4 class="card-title">{{user.firstName +' '+ user.lastName}}</h4>
+      <p class="card-text">{{user.about}}</p>
+      <a href="#" class="btn btn-primary" (click)="showProfile(user);">See Profile</a>
+    </div>
+  </div>
+<br>
+
+</div>
+</div>
